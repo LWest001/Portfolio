@@ -1,0 +1,182 @@
+/* GENERAL SCOPE */
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /* google font */
+    /*     user-agent reset below */
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    scroll-padding: 30px;
+}
+
+body {
+    background-color: #a2c9f6;
+}
+
+
+/* GENERAL ELEMENTS */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+button {
+    height: 40px;
+    border: none;
+    background: none;
+    font-size: 15px;
+    width: 80px;
+    font-weight: bold;
+}
+
+li {
+    display: inline-block;
+    margin: 0;
+}
+
+p {
+    max-width: 500px;
+    min-width: 250px;
+    margin: auto;
+    text-align: justify;
+}
+
+
+/* HEADER SECTION */
+
+header {
+    background-image: linear-gradient(0deg, #a2c9f6, rgba(255, 255, 255, 0) 20% 80%, #a2c9f6), url(img/wideshot.png);
+    background-position: bottom right;
+    height: 570px;
+    margin: auto;
+    /* center the background image */
+    max-width: 1190px;
+    position: relative;
+    top: 9px;
+    text-align: center;
+}
+
+header img {
+    height: 60px;
+    margin: 0px 32px 0 0;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+header h1,
+header h2 {
+    line-height: 15px;
+    margin: 30px;
+    position: relative;
+    top: 55px;
+}
+
+
+/* NAV BAR */
+
+nav {
+    position: fixed;
+    /* keeps nav bar on top when scrolling*/
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+nav ul {
+    background: linear-gradient(white 0% 30%, #a2c9f6 85%, #a2c9f600);
+    /* blend into photo*/
+}
+
+
+/* MAIN SECTION */
+
+#welcome {
+    margin: 60px auto;
+    text-align: center;
+}
+
+main h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.content p {
+    border: white dashed 2px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 0 auto 30px auto;
+}
+
+#resume {
+    margin-bottom: 60px;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(0deg, white 0% 30%, #a2c9f6 85%, #a2c9f600);
+    padding-left: 10px;
+    text-align: center;
+}
+
+footer button {
+    width: 82px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px none;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+#github {
+    background-image: url(img/github.png);
+}
+
+#linkedin {
+    background-image: url(img/linkedin.png)
+}
+
+#email {
+    background-image: url(img/email.png);
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 470px) {
+    header {
+        background-position: -700px bottom;
+    }
+}
+
+@media (max-height:715px) {
+    #welcome {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 390px) {
+    button {
+        padding: 0 5px;
+    }
+}
+
+@media (hover: hover) {
+    .links:hover {
+        background: linear-gradient( #a2c9f6, #a2c9f600)
+    }
+}
