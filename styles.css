@@ -2,12 +2,12 @@
 
 * {
     font-family: 'Nunito', sans-serif;
-    /* google font */
-    /*     user-agent reset below */
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
     scroll-padding: 30px;
+    /* google font */
+    /*     user-agent reset below */
 }
 
 body {
@@ -18,18 +18,18 @@ body {
 /* GENERAL ELEMENTS */
 
 a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 button {
-    height: 40px;
-    border: none;
     background: none;
+    border: none;
     font-size: 15px;
-    width: 80px;
     font-weight: bold;
+    height: 40px;
     min-width: max-content;
+    width: 80px;
 }
 
 li {
@@ -38,9 +38,9 @@ li {
 }
 
 .paragraph-container {
+    margin: auto;
     max-width: 500px;
     min-width: 250px;
-    margin: auto;
     text-align: justify;
 }
 
@@ -52,19 +52,19 @@ header {
     background-position: bottom right;
     height: 570px;
     margin: auto;
-    /* center the background image */
     max-width: 1190px;
     position: relative;
-    top: 9px;
     text-align: center;
+    top: 9px;
+    /* center the background image */
 }
 
 header img {
     height: 60px;
+    left: 20px;
     margin: 0px 32px 0 0;
     position: relative;
     top: 40px;
-    left: 20px;
 }
 
 header h1,
@@ -79,20 +79,20 @@ header h2 {
 /* NAV BAR */
 
 nav {
+    display: flex;
     position: fixed;
-    /* keeps nav bar on top when scrolling*/
+    text-align: center;
     top: 0;
     width: 100%;
     z-index: 1;
-    text-align: center;
-    display: flex;
+    /* keeps nav bar on top when scrolling*/
 }
 
 nav ul {
     background: linear-gradient(white 0% 30%, #a2c9f6 85%, #a2c9f600);
-    /* blend into photo*/
     margin: auto;
     width: 100%;
+    /* blend into photo*/
 }
 
 nav ul button {
@@ -117,8 +117,8 @@ footer ul .links:active {
 }
 
 main h3 {
-    text-align: center;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 main h4 {
@@ -126,49 +126,50 @@ main h4 {
 }
 
 .paragraph-container {
-    border: white dashed 2px;
-    padding: 4px;
     border-radius: 4px;
-    margin: 0 auto 30px auto;
+    border: white dashed 2px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto 30px auto;
+    padding: 4px;
 }
 
 .paragraph-container figure {
-    width: auto;
-    height: 300px;
-    background: radial-gradient(lightblue, violet);
+    background: radial-gradient(farthest-corner at 40px 40px, white, #a2c9f6 80%);
+    outline: 1px solid black;
     border-radius: 4px;
-    ;
+    height: 300px;
+    width: auto;
 }
 
 .separator {
     border-top: white dashed 2px;
-    width: 70%;
+    height: 0;
     margin: 10px auto;
+    width: 70%;
 }
 
 
 /* FOOTER */
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background: linear-gradient(0deg, white 0% 30%, #a2c9f6 85%, #a2c9f600);
+    bottom: 0;
     padding-left: 10px;
+    position: fixed;
     text-align: center;
+    width: 100%;
 }
 
 footer button {
-    width: 82px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border: 10px none;
+    height: 40px;
     margin-bottom: 3px;
     margin-top: 3px;
+    width: 82px;
 }
 
 #github {
@@ -197,9 +198,9 @@ footer button {
         background-position: -700px bottom;
     }
     nav ul {
+        display: flex;
         justify-content: space-between;
         padding: 0px 10px;
-        display: flex;
     }
 }
 
@@ -223,4 +224,11 @@ footer button {
     nav .links:hover {
         background: linear-gradient( #a2c9f600, #a2c9f6)
     }
+    .paragraph-container figure:hover {
+        outline: 2px solid black;
+    }
+}
+
+.paragraph-container figure:active {
+    background: radial-gradient(farthest-corner at 40px 40px, rgb(210, 210, 210), #a2c9f6 80%);
 }
