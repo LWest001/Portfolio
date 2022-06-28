@@ -22,10 +22,6 @@ a {
     color: black;
 }
 
-a:visited {
-    color: black;
-}
-
 button {
     height: 40px;
     border: none;
@@ -33,6 +29,7 @@ button {
     font-size: 15px;
     width: 80px;
     font-weight: bold;
+    min-width: max-content;
 }
 
 li {
@@ -88,11 +85,23 @@ nav {
     width: 100%;
     z-index: 1;
     text-align: center;
+    display: flex;
 }
 
 nav ul {
     background: linear-gradient(white 0% 30%, #a2c9f6 85%, #a2c9f600);
     /* blend into photo*/
+    margin: auto;
+    width: 100%;
+}
+
+nav ul button {
+    color: black;
+}
+
+nav ul .links:active,
+footer ul .links:active {
+    background: #a2c9f6;
 }
 
 
@@ -101,6 +110,10 @@ nav ul {
 #welcome {
     margin: 60px auto;
     text-align: center;
+}
+
+#resume {
+    margin-bottom: 60px;
 }
 
 main h3 {
@@ -113,10 +126,6 @@ main h3 {
     padding: 4px;
     border-radius: 4px;
     margin: 0 auto 30px auto;
-}
-
-#resume {
-    margin-bottom: 60px;
 }
 
 
@@ -161,6 +170,11 @@ footer button {
     header {
         background-position: -700px bottom;
     }
+    nav ul {
+        justify-content: space-between;
+        padding: 0px 10px;
+        display: flex;
+    }
 }
 
 @media (max-height:715px) {
@@ -171,12 +185,16 @@ footer button {
 
 @media (max-width: 390px) {
     button {
-        padding: 0 5px;
+        padding: 0;
+        width: fit-content;
     }
 }
 
 @media (hover: hover) {
-    .links:hover {
+    footer .links:hover {
         background: linear-gradient( #a2c9f6, #a2c9f600)
+    }
+    nav .links:hover {
+        background: linear-gradient( #a2c9f600, #a2c9f6)
     }
 }
