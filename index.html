@@ -11,14 +11,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
     </style>
+    <script src="modal.js" defer></script>
 </head>
 
 <body>
     <nav>
         <ul>
             <li class="links"><a href="#"><button>home</button></a></li>
-            <li class="links"><a href="#projects"><button>projects</button></a></li>
             <li class="links"><a href="#about-me"><button>about me</button></a></li>
+            <li class="links"><a href="#projects"><button>projects</button></a></li>
             <li class="links"><a href="#resume"><button>resume</button></a></li>
             <li class="links"><a href="mailto:leo.westebbe@gmail.com"><button>contact</button></a></li>
         </ul>
@@ -32,49 +33,9 @@
             <img src="img/js.png" alt="javascript logo">
         </header>
         <section class="content">
-            <div class="heading-container" id="welcome">
-                <h2>Welcome to the homepage and portfolio of Leo Westebbe!</h2>
-            </div>
-            <section id="projects">
+            <section class="section-container" id="about-me">
                 <div class="heading-container">
-                    <h3>projects</h3>
-                </div>
-                <div class="paragraph-container">
-                    <div class="project">
-                        <h4>impressive web app</h4>
-                        <a href="#projects">
-                            <figure><img src="#" alt="Image of project."></figure>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti exercitationem
-                            laboriosam minus repellat dolorum pariatur maiores illum magnam, illo nihil ea!</p>
-                    </div>
-                    <!-- <p class="separator"></p> -->
-                    <div class="project">
-                        <h4>interactive restaurant page</h4>
-                        <a href="#projects">
-                            <figure><img src="#" alt="Image of project."></figure>
-                        </a>
-                        <p>Eos in nam minima recusandae, tempora repellat voluptas? Harum asperiores saepe deleniti
-                            sapiente. Quam saepe est a, non doloribus nostrum illum eligendi reiciendis dolores dolorem
-                            ratione ullam enim aut aliquid.</p>
-
-                    </div>
-                    <!-- <p class="separator"></p> -->
-                    <div class="project">
-                        <h4>e-commerce platform</h4>
-                        <a href="#projects">
-                            <figure><img src="#" alt="Image of project."></figure>
-                        </a>
-                        <p>Ut eum quam quo, provident hic quae quod amet ab quibusdam id natus ullam odio esse in
-                            tempore
-                            laudantium cupiditate sit? Officia cumque reiciendis quidem dicta rerum nisi aliquam porro.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="about-me">
-                <div class="heading-container">
-                    <h3>about me</h3>
+                    <h2>about me</h2>
                 </div>
                 <div class="paragraph-container">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, laborum praesentium? Nihil
@@ -92,9 +53,51 @@
                     </p>
                 </div>
             </section>
-            <section id="resume">
+            <section class="section-container" id="projects">
                 <div class="heading-container">
-                    <h3>resume</h3>
+                    <h2>projects</h2>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal">
+                    <h3>Project Title</h3>
+                    <button class="xOut">x</button>
+                    <img src="" alt="project image">
+                    <div class="projectDescription"></div>
+                </div>
+
+                <!-- project boxes -->
+                <div class="paragraph-container" id="projects-container">
+                    <div class="projectContainer">
+                        <h4>group chat application</h4>
+                        <a class="projectImgAnchor" href="#projects">
+                            <figure><img src="img/chatScreenWide.png" alt="Image of project."></figure>
+                        </a>
+                        <p>Join your friends on this fun chat application!</p>
+                    </div>
+                    <!-- <p class="separator"></p> -->
+                    <div class="projectContainer">
+                        <h4>interactive restaurant page</h4>
+                        <a class="projectImgAnchor" href="#projects">
+                            <figure><img src="#" alt="Image of project."></figure>
+                        </a>
+                        <p>When this restaurant commissioned a webpage from me, I knocked their socks off!</p>
+
+                    </div>
+                    <!-- <p class="separator"></p> -->
+                    <div class="projectContainer">
+                        <h4>e-commerce platform</h4>
+                        <a class="projectImgAnchor" href="#projects">
+                            <figure><img src="#" alt="Image of project."></figure>
+                        </a>
+                        <p>Find your favorite products on this e-commerce platform!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-container" id="resume">
+                <div class="heading-container">
+                    <h2>resume</h2>
                 </div>
                 <div class="paragraph-container">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non assumenda fugit minima eos,
